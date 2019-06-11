@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
+=======
+
+>>>>>>> ce195f7c76632cb29355f157a0a57b06fa676dea
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<<<<<<< HEAD
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -13,4 +18,69 @@
     
     <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
+=======
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Chuuu Chuuu</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Fluid jumbotron</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="results-container">
+        <div class='card-panel trainInfo'>
+            <h4 class='center-align'>Current Train Schedule</h4>
+            <table class="table striped center bordered responsive-table" id='results-table'>
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (minutes)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container" id="input-container">
+        <form>
+            <div class="form-group">
+                <label for="trainInput">Train Name</label>
+                <input type="text" class="form-control" id="train-name" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="destinationInput">Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="Where at?">
+            </div>
+            <div class="form-group">
+                <label for="timeInput">First Train Time (HH:mm - Military Time)</label>
+                <input type="text" class="form-control" id="first-time" placeholder="(HH:mm - Military Time)">
+            </div>
+            <div class="form-group">
+                <label for="frequencyInput">Frequency (Minutes)</label>
+                <input type="text" class="form-control" id="frequency" placeholder="How many minutes?">
+            </div>
+            <button type="submit" id="submit-input" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <script type="javascript" src="assets/js/script.js"></script>
+</body>
+
+>>>>>>> ce195f7c76632cb29355f157a0a57b06fa676dea
 </html>

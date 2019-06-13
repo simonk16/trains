@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <!-- Firebase Reference -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
+</head>
+        
+        
+       
+    
+    
+<body>
+    
+    <div class="container">
+       
+
+    <div class="container" id="results-container">
+        <div class='card-panel trainInfo'>
+            <h4 class='center-align'>Current Train Schedule</h4>
+            <table class="table striped center bordered responsive-table" id='results-table'>
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (minutes)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container" id="input-container">
+        <form>
+            <div class="form-group">
+                <label for="train-name">Train Name</label>
+                <input type="text" class="form-control" id="train-name" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination</label>
+                <input type="text" class="form-control" id="destination" placeholder="Where at?">
+            </div>
+            <div class="form-group">
+                <label for="first-time">First Train Time (HH:mm - Military Time)</label>
+                <input type="text" class="form-control" id="first-time" placeholder="(HH:mm - Military Time)">
+            </div>
+            <div class="form-group">
+                <label for="frequency">Frequency (Minutes)</label>
+                <input type="text" class="form-control" id="frequency" placeholder="How many minutes?">
+            </div>
+            <button type="submit" id="submit-input" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+                            <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+
+
+</html>

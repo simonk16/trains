@@ -13,7 +13,8 @@
         <!-- Firebase Reference -->
         <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
-
+        <!-- Moment.js Reference -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 </head>
         
         
@@ -31,11 +32,11 @@
             <table class="table striped center bordered responsive-table" id='results-table'>
                 <thead>
                     <tr>
-                        <th>Train Name</th>
-                        <th>Destination</th>
-                        <th>Frequency (minutes)</th>
-                        <th>Next Arrival</th>
-                        <th>Minutes Away</th>
+                        <th id="name">Train Name</th>
+                        <th id="destiny">Destination</th>
+                        <th id="freq">Frequency (minutes)</th>
+                        <th id="nexxt">Next Arrival</th>
+                        <th id="mins">Minutes Away</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -69,6 +70,7 @@
 
                             <!-- JAVASCRIPT -->
     <script type="text/javascript" src="assets/js/script.js"></script>
+
 </body>
 
 

@@ -79,7 +79,14 @@ database.ref().on("child_added", function (childSnapshot) {
   var nextT = moment().add(untilTrain, "minutes");
   console.log("ARRIVAL TIME: " + moment(nextT).format("hh:mm"));
 
-  
+  var newRow = $("<tr>").append(
+    $("<td>").text(trainName),
+    $("<td>").text(destination),
+    $("<td>").text(frequency),
+    $("<td>").text(nextT),
+    $("<td>").text(untilTrain)
+  );
 
+  $("#results-table > tbody").append(newRow);
 
-})
+});
